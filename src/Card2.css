@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(45deg, #ffaf00, #bb02ff);
+  background-attachment: fixed;
+  flex-direction: row;
+}
+
+.containerss {
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.containerss .cards {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.containerss:hover .cards {
+  filter: blur(2px);
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+.containerss .cards:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+.containerss .cards .circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+}
+.containerss .cards .circle h2 {
+  color: #fff;
+  font-size: 1.5em;
+  padding: 30px 0;
+}
+.containerss .cards .content {
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.containerss .cards .content p {
+  color: #666;
+}
+.containerss .cards .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.containerss .cards:nth-child(1) .circle,
+.containerss .cards:nth-child(1) .content a {
+  background: #ffaf00;
+}
+
+.containerss .cards:nth-child(2) .circle,
+.containerss .cards:nth-child(2) .content a {
+  background: #bb02ff;
+}
+.containerss .cards:nth-child(3) .circle,
+.containerss .cards:nth-child(3) .content a {
+  background: #da2268;
+}
+
+

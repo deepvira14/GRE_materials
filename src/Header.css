@@ -1,0 +1,19 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #be0af2;
+  border-radius: 50px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  padding: 20px;
+  border-bottom: 1px solid #eb7b4c;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top:10px;
+}
+
+h3 {
+  color: blanchedalmond;
+}
